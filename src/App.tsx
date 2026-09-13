@@ -8,7 +8,7 @@ import Banner from "./component/Banner";
 import Navbar from "./component/Navbar";
 import TechnologySection from "./component/TechnologySection";
 import StackSidebar from "./component/StackSidebar";
-
+import Footer from "./component/Footer";
 function App() {
   const [stack, setStack] = useState<Technology[]>([]);
 
@@ -43,6 +43,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <main className="bg-[var(--hero-gradient)]">
       <Banner />
 
       <div className="container mx-auto grid gap-6 lg:grid-cols-[1fr_350px]">
@@ -57,8 +58,10 @@ function App() {
           onRemoveAll={removeAllTechnologies}
         />
       </div>
-
+      </main>
+        <Footer />
       <ToastContainer />
+
     </>
   );
 }

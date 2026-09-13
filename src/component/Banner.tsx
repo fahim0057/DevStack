@@ -2,7 +2,7 @@ import Bannerimg from "../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[var(--hero-gradient)]">
+    <section >
       <div className="container mx-auto flex flex-col items-center justify-between gap-10 py-10 md:flex-row">
 
         {/* Left side */}
