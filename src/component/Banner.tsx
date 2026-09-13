@@ -26,16 +26,16 @@ const Banner = () => {
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
 
-            <button
-              className="rounded-full px-5 py-2 text-white"
-              style={{ background: "var(--brand-gradient)" }}
-            >
-              Explore Technologies
-            </button>
+<button
+  className="rounded-full px-5 py-2 text-white transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 hover:shadow-md"
+  style={{ background: "var(--brand-gradient)" }}
+>
+  Explore Technologies
+</button>
 
-            <button className="rounded-full border border-gray-300 bg-white px-5 py-2 text-black">
-              Learn More
-            </button>
+<button className="rounded-full border border-gray-300 bg-white px-5 py-2 text-black transition-all duration-200 hover:border-[#D91B7E] hover:text-[#D91B7E] hover:shadow-sm">
+  Learn More
+</button>
 
           </div>
         </div>

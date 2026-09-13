@@ -41,13 +41,16 @@ const Navbar = () => {
 
         {/* Authentication */}
         <div className="flex items-center gap-3">
-          <button className="px-2 py-2 text-black md:px-4">
-            Sign In
-          </button>
+<button className="rounded-full px-4 py-2 text-black transition-colors duration-200 hover:bg-pink-50 hover:text-[#D91B7E]">
+  Sign In
+</button>
 
-          <button className="rounded-full bg-[#D91B7E] px-3 py-2 text-white md:px-5">
-            Sign Up
-          </button>
+<button
+  className="rounded-full px-5 py-2 text-white transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 hover:shadow-md"
+  style={{ background: "var(--brand-gradient)" }}
+>
+  Sign Up
+</button>
         </div>
 
       </div>
