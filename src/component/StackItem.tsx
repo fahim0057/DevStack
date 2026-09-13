@@ -26,6 +26,7 @@ const StackItem = ({ technology, onRemove }: StackItemProps) => {
       <div className="flex-1">
         <h3 className="font-semibold">{technology.name}</h3>
         <p className="text-sm text-gray-500">{technology.category}</p>
+        
       </div>
 
       <button

@@ -13,7 +13,7 @@ const StackSidebar = ({
   onRemoveAll,
 }: StackSidebarProps) => {
   return (
-    <aside className="rounded-2xl bg-white p-6 shadow-sm">
+    <aside className="sticky top-24 self-start rounded-2xl bg-white p-6 shadow-sm">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">

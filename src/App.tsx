@@ -1,5 +1,8 @@
 import { useState } from "react";
-import type { Technology } from "../src/component/types/technology";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import type { Technology } from "./component/types/technology";
 
 import Banner from "./component/Banner";
 import Navbar from "./component/Navbar";
@@ -10,19 +13,36 @@ function App() {
   const [stack, setStack] = useState<Technology[]>([]);
 
   const removeTechnology = (id: string) => {
+    const removedTechnology = stack.find(
+      (item) => item.id === id
+    );
+
     setStack((prev) =>
       prev.filter((item) => item.id !== id)
     );
+
+    if (removedTechnology) {
+      toast.info(
+        `${removedTechnology.name} removed from your stack.`
+      );
+    }
   };
 
   const removeAllTechnologies = () => {
+    if (stack.length === 0) {
+      return;
+    }
+
     setStack([]);
+
+    toast.success(
+      "All technologies removed from your stack."
+    );
   };
 
   return (
     <>
       <Navbar />
-
       <Banner />
 
       <div className="container mx-auto grid gap-6 lg:grid-cols-[1fr_350px]">
@@ -37,6 +57,8 @@ function App() {
           onRemoveAll={removeAllTechnologies}
         />
       </div>
+
+      <ToastContainer />
     </>
   );
 }
