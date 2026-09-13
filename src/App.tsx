@@ -1,5 +1,7 @@
 import Banner from "./component/Banner"
 import Navbar from "./component/Navbar"
+import TechnologyCard from "./component/TechnologyCard"
+import TechnologySection from "./component/TechnologySection"
 
 function App() {
 
@@ -7,6 +9,8 @@ function App() {
   <>
       <Navbar/>
       <Banner/>
+      <TechnologySection/>
+      <TechnologyCard/>
 
 </>
 
