@@ -28,6 +28,7 @@ The website is fully responsive and works across desktop, tablet, and mobile dev
 ## ✨ Live Link
 https://fit-log-eta-weld.vercel.app/
 
+---
 # ⚛️ React Questions & Answers
 
 ##. What is JSX, and why is it used in React?
