@@ -3,8 +3,8 @@
 A responsive React website that allows users to explore different web development technologies and build their own personalized development stack.
 ## 🔗 Links
 
-- 🌐 **Live Website:** [Visit Live Site](https://animated-raindrop-092a52.netlify.app/))
-- 💻 **GitHub Repository:** [View Repository](https://github.com/fahim0057/DevStack.git))
+- 🌐 **Live Website:** [Visit Live Site](https://animated-raindrop-092a52.netlify.app/)
+- 💻 **GitHub Repository:** [View Repository](https://github.com/fahim0057/DevStack.git)
 
 ---
 
